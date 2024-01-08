@@ -29,6 +29,7 @@ wishlistController.addWishlistItem = async (req, res, next) => {
 wishlistController.deleteWishlistItem = async (req, res, next) => {
   try {
     // specify exactly what we want to delete
+    
     const { id } = req.params;
 
     const deleteWishListItem = await pool.query(
